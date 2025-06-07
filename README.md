@@ -1,6 +1,6 @@
 # 学年鉴定表自动化处理工具 v2.0
 
-> 🎓 专为高校学年鉴定表批量处理设计的自动化工具
+> 🎓 专为厦门大学学年鉴定表批量处理设计的自动化工具
 
 ## ✨ 功能特性
 
@@ -38,9 +38,6 @@
 │   └── templates/               # 模板文件
 │       └── 四年制学年鉴定表/     # 学年鉴定表模板
 ├── output/                       # 输出目录
-├── build_tools/                  # 构建工具
-│   ├── build.bat               # Windows构建脚本
-│   └── build_exe.spec          # PyInstaller配置
 ├── docs/                         # 文档目录
 ├── scripts/                      # 脚本目录
 ├── requirements.txt              # Python依赖列表
@@ -111,11 +108,6 @@
 | `automation.auto_mode` | 自动模式开关 | `false` |
 | `pdf_conversion.enabled` | 启用PDF转换 | `true` |
 
-### 自动化配置
-- `auto_mode`: 启用后将使用预设路径，无需用户输入
-- `auto_process_all_classes`: 启用后自动处理所有班级
-- `backup_original_files`: 是否备份原始文件
-
 ## 🔧 开发者指南
 
 ### 代码结构
@@ -142,10 +134,6 @@ build.bat
 - `openpyxl`: Excel文件操作
 - `python-docx`: Word文档操作
 - `comtypes`: Windows COM接口（用于Office自动化）
-
-### 可选依赖
-- `colorama`: 彩色终端输出
-- `tqdm`: 进度条显示
 
 ## 🐛 故障排除
 
