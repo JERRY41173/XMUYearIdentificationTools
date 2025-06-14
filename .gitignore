@@ -1,0 +1,87 @@
+# 虚拟环境
+venv/
+.venv/
+env/
+.env/
+
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分发/打包
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# 单元测试 / 覆盖率报告
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# 环境变量文件
+.env
+.venv
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# 输出目录和临时文件
+output/
+temp/
+*.tmp
+*.log
+
+# Excel 临时文件
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.doc
+
+# Windows 特定文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 测试数据（如果不想上传真实数据）
+data/samples/*.xlsx
+data/samples/*.xls
+!data/samples/名单样例.xlsx
