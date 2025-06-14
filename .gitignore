@@ -58,30 +58,45 @@ ENV/
 env.bak/
 venv.bak/
 
-# VS Code
+# IDE配置
 .vscode/
-
-# PyCharm
 .idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
 
 # 输出目录和临时文件
 output/
+release/
 temp/
+tmp/
 *.tmp
 *.log
 
-# Excel 临时文件
+# Office 临时文件
 ~$*.xlsx
 ~$*.xls
 ~$*.docx
 ~$*.doc
+~$*.pptx
+~$*.ppt
 
-# Windows 特定文件
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# 测试数据（如果不想上传真实数据）
+# 测试数据（保留样例文件）
 data/samples/*.xlsx
 data/samples/*.xls
-!data/samples/名单样例.xlsx
+!data/samples/*样例*
+
+# 开发工具配置
+.mypy_cache/
+.coverage
+.pytest_cache/

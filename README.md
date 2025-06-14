@@ -20,7 +20,7 @@
 ## 📁 项目结构
 
 ```bash
-学年鉴定/
+学年鉴定表自动化处理工具/
 ├── src/                          # 源代码目录
 │   ├── core/                     # 核心功能模块
 │   │   ├── __init__.py          # 模块初始化
@@ -32,18 +32,36 @@
 │   │   ├── config_handler.py    # 配置管理器
 │   │   └── dependency_manager.py # 依赖管理器
 │   └── main.py                   # 主程序入口
+├── tests/                        # 测试目录
+│   ├── __init__.py              # 测试模块初始化
+│   ├── test_config_handler.py   # 配置处理器测试
+│   └── test_file_renamer.py     # 文件重命名器测试
+├── tools/                        # 开发工具目录
+│   ├── setup-dev.bat           # 开发环境设置脚本
+│   ├── build.py                # 项目构建脚本
+│   └── quality-check.py        # 代码质量检查脚本
 ├── config/                       # 配置文件目录
 │   └── settings.json            # 主配置文件
 ├── data/                         # 数据目录
 │   ├── samples/                 # 样例数据
-│   │   └── 名单样例.xlsx        # Excel样例文件
 │   └── templates/               # 模板文件
 │       └── 四年制学年鉴定表/     # 学年鉴定表模板
-├── output/                       # 输出目录
-├── docs/                         # 文档目录
-├── scripts/                      # 脚本目录
-├── requirements.txt              # Python依赖列表
-└── README.md                     # 项目说明文档
+├── docs/                         # 文档和资源目录
+│   ├── zhu.ico                  # 应用程序图标
+│   └── zhu.svg                  # 矢量图标
+├── output/                       # 输出目录（运行时生成）
+├── dist/                         # 打包输出目录（构建时生成）
+├── release/                      # 发布包目录（构建时生成）
+├── requirements.txt              # 运行时依赖列表
+├── requirements-dev.txt          # 开发依赖列表
+├── pyproject.toml               # 项目配置文件
+├── setup.py                     # 安装配置脚本
+├── MANIFEST.in                  # 打包清单文件
+├── LICENSE                      # 开源许可证
+├── CHANGELOG.md                 # 更新日志
+├── .gitignore                   # Git忽略文件列表
+├── run.bat                      # 快速启动脚本
+└── README.md                    # 项目说明文档
 ```
 
 ## 🚀 快速开始
@@ -213,6 +231,5 @@ build.bat
 - 📝 基础文件重命名功能
 - ✍️ 评语填写功能
 - 📄 PDF转换功能
-
 
 > 💡 **提示**: 建议在首次使用前仔细阅读本文档，确保正确配置所有必要的参数。

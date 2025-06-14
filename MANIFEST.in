@@ -1,0 +1,35 @@
+# 包含额外的文件到分发包中
+include README.md
+include LICENSE
+include CHANGELOG.md
+include pyproject.toml
+include requirements.txt
+include requirements-dev.txt
+
+# 包含配置文件
+recursive-include config *.json *.ini *.conf
+
+# 包含数据文件
+recursive-include data *.xlsx *.docx *.txt
+
+# 包含文档
+recursive-include docs *.md *.rst *.ico *.svg *.png *.jpg
+
+# 包含脚本
+recursive-include scripts *.bat *.sh *.py
+
+# 排除不需要的文件
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude .git*
+prune venv
+prune .venv
+prune build
+prune dist
+prune *.egg-info
+prune .pytest_cache
+prune .mypy_cache
