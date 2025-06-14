@@ -77,7 +77,6 @@ Desktop.ini
 
 # 输出目录和临时文件
 output/
-release/
 temp/
 tmp/
 *.tmp
