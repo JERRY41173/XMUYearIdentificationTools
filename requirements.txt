@@ -1,9 +1,13 @@
+# 运行时依赖
+pandas>=1.5.0
+openpyxl>=3.0.10
+python-docx>=0.8.11
+comtypes>=1.1.14
+colorama>=0.4.6
+
 # 开发和打包依赖
 pyinstaller>=6.0.0     # 可执行文件打包工具
 pytest>=7.0.0          # 测试框架
 black>=22.0.0          # 代码格式化工具
 flake8>=4.0.0          # 代码检查工具
 mypy>=0.900            # 类型检查工具
-
-# 包含运行时依赖
--r requirements.txt

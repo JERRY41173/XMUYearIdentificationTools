@@ -84,7 +84,7 @@ class AutomationApp:
                         source_dir = valid_paths['source_dir']
                         break
                 
-                source_dir = input("请输入源文件夹路径: ").strip().replace('"', '')
+                source_dir = input("请输入存放学年鉴定word文档的文件夹路径: ").strip().replace('"', '')
                 if os.path.exists(source_dir):
                     break
                 else:
@@ -226,9 +226,9 @@ class AutomationApp:
         """运行应用程序"""
         try:
             # 检查依赖项
-            if not self.check_dependencies():
-                input("\n按回车键退出...")
-                return
+            # if not self.check_dependencies():
+            #     input("\n按回车键退出...")
+            #     return
             
             print("\n程序已启动，请按照提示操作。\n")
             
